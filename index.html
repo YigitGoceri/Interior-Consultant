@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+        <h2>THIS INTERIOR</h2>
+        <div class="toggle_button"><i class="fa-solid fa-bars" ></i></div>
+        <i class="fa-solid fa-xmark"></i>
+            <ul class="navbar">
+            <li>Home</li>
+        <li>Collection</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    
+               
+        </div>
+
+        <div class="middle_section">
+        <div class="yazilar">
+            <h2>Modern interior</h2>
+            <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+             <h3>Read more </h3> 
+             <i class="fa-solid fa-arrow-right-long"></i>
+             
+             </div>
+
+        <div class="resimler">
+            <div class="resim1"><img src="photo1.png" alt=""></div>
+            <div class="kucukkart">
+                <img src="photo2.png" alt="">
+               <div class="name"><h3>Aliza Webber</h3></div> 
+               <div class="title"><h4>Interior designer</h4></div>
+               <div class="parag_architect"><p>Designed in 2020 by Aliza Webber</p></div> 
+            </div>
+
+    
+    </div>
+
+       </div>
+        <br>
+        <footer>created by YigitGoceri - devChallenges.io</footer>
+
+
+
+
+
+
+    </div>
+
+
+
+<script>
+
+
+  document.querySelector(".fa-bars").addEventListener('click',function(){
+
+document.querySelector(".navbar").classList.toggle("aktif");
+document.querySelector(".fa-bars").classList.toggle("aktif");
+document.querySelector(".fa-xmark").classList.toggle("aktif");
+document.querySelector(".container").classList.add("aktif");
+
+
+  });
+
+  document.querySelector(".fa-xmark").addEventListener('click',function(){
+      document.querySelector(".navbar").classList.toggle("aktif");
+      document.querySelector(".fa-bars").classList.toggle("aktif");
+      document.querySelector(".fa-xmark").classList.toggle("aktif");
+      
+  });
+
+
+</script>
+    
+</body>
+</html>
